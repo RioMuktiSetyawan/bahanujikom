@@ -13,7 +13,7 @@ include "koneksi.php";
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
     <div class="mt-3">
     <h3 class = "text-center">CRUD - PHP - MYSQL + Modal bootstrap 5</h3>
     <h3 class = "text-center">Ngoding Pintar</h3>
@@ -59,8 +59,8 @@ include "koneksi.php";
         <td><?= $data['alamat']?></td>
         <td><?= $data['prodi']?></td>
         <td>
-            <a href ="#" class = "btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalUbah<?= $no ?>">Ubah</a>
-            <a href ="#" class = "btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalHapus<?= $no ?>">Hapus</a>
+            <a href ="#" class = "btn btn-warning " data-bs-toggle="modal" data-bs-target="#modalUbah<?= $no ?>">Ubah</a>
+            <a href ="#" class = "btn btn-danger " data-bs-toggle="modal" data-bs-target="#modalHapus<?= $no ?>">Hapus</a>
         </td>
     </tr>
         <!-- Modalubah (static backdrop) -->
